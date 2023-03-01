@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  <title>Global Mission Donations - Donate</title>
+  <!-- CSS link -->
+  <link rel="stylesheet" href="donate.css">
+
+</head>
+
+<body>
+  <main class="d-flex flex-column justify-content-between" style="height: 100vh;">
+    <nav class="navbar navbar-expand-lg navbar-light border">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html"><img style="width: 300px; height: 120px;" src="/images/logo.jpeg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active fs-5 fw-normal text-muted" aria-current="page" href="/index.html">Global Empowerment
+                Mission Donations</a>
+            </li>
+
+          </ul>
+          </li>
+
+          </ul>
+          <form class="d-flex align-items-center">
+            <!-- <p class="mb-0 px-2">Have a donor account?</p>
+            <button class="btn border" type="submit">Sign in</button> -->
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container-lg d-md-flex gap-5  py-5 ">
+      <div>
+        <img src="/images/bstrong-img.PNG" alt="" class="w-100">
+      </div>
+
+      <div class="col-md-5  border px-4 py-4">
+        <form action="#" class="">
+          <div class="d-flex justify-content-between align-items-center ">
+            <p class="fw-bold fs-5 text-black mb-0">Global Empowerment Mission Crisis Donations</p>
+            <i class="fa fa-lock text-muted"></i>
+          </div>
+          <div class="pt-3">
+            <p class="" style="text-align: justify;">Our priority is for your generous donations to be channelled in the best way possible for maximum short, 
+              medium, and long-term impact. Our grantees so far have participated in search and rescue 
+              operations, provided food, clean water, clothing, mobile toilets, heaters, tents, hygiene kits, power banks, 
+              shopping cards, toys & books, psychological first aid and counselling 
+              to the survivors in the areas affected by the earthquakes. Your donations have literally saved and improved lives</p>
+          </div>
+
+          <div class="mt-3">
+           
+            <div>
+              <div id="item1" class="pt-3 ">
+                <div class="olorun">
+                  <div class="olorun1">
+                    <button type="button" id="supportukr" class="bg-primary fw-bold">Support Humanity</button>
+                  </div>
+                  
+                  <div id="myModal" class="modal">
+            
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span id="close" onclick="shut()">&times;</span>
+                      <div class="card">
+                        <div class="card-body" align="center">
+                          <h5 class="card-title"><span id="goback" style="float: left; cursor: pointer;"></span> Choose Amount</span></h5>
+                          <div class="first-panel">
+                            <div class="panel-group">
+                            <!-- <span class="panel-label">$</span> -->
+                            <input type="text" name="amount" id="amount" class="form-control panel-control" aria-describedby="helpId">
+                            </div>
+                                       <br>
+                            <div class="row ">
+                              <div class="col-md-4">
+                                <div class="">
+                                <button type="button" id="btn-20" class="btn btn-donate bg-light "><span class="dollar">$</span> <span id="amt20" class="amtnum">20</span></button>
+                                </div>
+                              </div>
+                              <div class=" col-md-4">
+                              <div >
+                                <button type="button" id="btn-50" class="btn btn-donate bg-light text-dark "><span class="dollar">$</span> <span id="amt50" class="amtnum">50</span></button>
+                                </div>						  
+                              </div>
+                              <div class=" col-md-4">
+                              <div >
+                                <button type="button" id="btn-100" class="btn btn-donate bg-light text-dark "><span class="dollar">$</span> <span id="amt100" class="amtnum">100</span></button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                            <div class=" col-md-4">
+                              <div class="">
+                                <button type="button" id="btn-500" class="btn btn-donate bg-light text-dark "><span class="dollar">$</span> <span id="amt500" class="amtnum">500</span></button>
+                                </div>
+                              </div>
+                              <div class=" col-md-4">
+                              <div class="">
+                                <button type="button" id="btn-1000" class="btn btn-donate bg-light text-dark "><span class="dollar">$</span> <span id="amt1000" class="amtnum">1000</span></button>
+                                </div>
+                              </div>
+                              <div class=" col-md-4">
+                              <div class="">
+                                <button type="button" id="btn-custom" class="btn btn-donate"><span>Custom</button>
+                                </div>
+                              </div>
+                  
+                            </div>
+                  
+                            <div class="" >
+                            <button type="button" id="btn-continue" class="btn btn-donate bg-primary border-0 text-white fw-bold btn-outline-primary" style="width: 50% !important;"><span>Continue</button>
+                            </div>
+                          </div>
+                  
+                          <div class="second-panel">
+                            <p style="justify-content: center;">Tap the copy button to copy BTC or Ethereum address to your clipboard. Open your Bitcoin or Ethereum wallet and paste the copied 
+                              text into your bitcoin or Ethereum wallet where it says "address" input desired amount and tap “Pay” or "Send", and you're done.</p>
+                  
+                          <div class="" style="padding: 15px; text-align: left;">
+                            <input type="radio" name="donatebtc" id="donatebtc" checked> 
+                            <span class="btc-label">Donate with BTC</span>
+                          </div>
+                  
+                          <div class="form-group" align="left">
+                              <label for="address" class="btc-label">Our Wallet Address</label>
+                          </div>
+                  
+                          <div class="row">
+                            <div class=" col-md-4"><textarea id="clipboard-area" readonly>bc1qj9sqzqp2kvumafu8w7tz3cqkaz8tnwa63xjz7n</textarea></div>
+                  
+                            <div class="col-md-4">
+                            <div class="cooltip">
+                            <!-- <button class="btn btn-copy btn-sm" style="height: 50px;" onclick="myFunction()" onmouseout="outFunc()">Copy
+                             <span class="tooltiptext" id="myTooltip">Copy to clipboard</span> 
+                            </button> -->
+                            <button class=" btn-copy bg-primary border-0 text-white fw-bold btn-outline-primary"  onclick="handleCopyTextFromArea()" >Copy</button>
+                          </div>
+            
+                          
+                        </div>
+
+                        <div class="" style="padding: 15px; text-align: left;">
+                          <input type="radio" name="donatebtc" id="donatebtc" checked> 
+                          <span class="btc-label">Donate with Ethereum</span>
+                        </div>
+                
+                        <div class="form-group" align="left">
+                            <label for="address" class="btc-label">Our Wallet Address</label>
+                        </div>
+                
+                        <div class="row">
+                          <div class=" col-md-4"><textarea id="clipboard-area" readonly>0xDf9252cDf510A8ca5aFac720a6F69DcEC3395771</textarea></div>
+                
+                          <div class="col-md-4">
+                          <div class="cooltip">
+                          <!-- <button class="btn btn-copy btn-sm" style="height: 50px;" onclick="myFunction()" onmouseout="outFunc()">Copy
+                           <span class="tooltiptext" id="myTooltip">Copy to clipboard</span> 
+                          </button> -->
+                          <button class=" btn-copy bg-primary border-0 text-white fw-bold btn-outline-primary"  onclick="handleCopyTextFromArea()" >Copy</button>
+                        </div>
+                        
+                      </div>
+
+                  
+                          <br>
+                                 <div class="table-responsive">
+                             <table class="table table-bordered">
+                                         <tr>
+                                 <th align="right">Donation Summary</th>
+                                 <td align="right"><a> </a></td>
+                               </tr>
+                               <tr>
+                              <td align="left">Payment Amount</th>
+                              <td align="right">$ <span id="paid"></span></td>
+                            </tr>
+
+                            <tr>
+                              <th align="right">Donation Total</th>
+                              <th align="right" style="text-align: right;">$ <span id="paid2"></span></td>
+                            </tr>
+                             </table>
+                           </div>
+                  
+                           <br>
+                           <a type="button" href="/thankyou.html"  class="btn donate bg-primary border-0 text-white fw-bold btn-outline-primary">Done</a>
+                  
+                          </div>
+                  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </form>
+      </div>
+      </div>
+    </section>
+
+    <footer class="row mx-0 align-items-center">
+      <div class="col-md-6">
+          <a href="#" class="text-decoration-none">Global Empowerment Mission Donations <small class="text-dark">powered by</small> <span class="text-dark fs-5 fw-bold">Kindful</span></a>
+      </div>
+      <div class="col-md-6 text-md-end">
+          <a href="#" class="text-decoration-none text-dark">Contact |</a>
+          <a href="#" class="text-decoration-none text-dark">Refund |</a>
+          <a href="#" class="text-decoration-none text-dark">Privacy |</a>
+          <a href="#" class="text-decoration-none text-dark">Terms</a>
+      </div>
+</footer>
+  </main>
+  
+
+  <script>
+
+
+  </script>
+
+
+
+
+
+
+  <!-- <script src="/main.js"></script> -->
+
+  <script>
+    $(document).ready(function() {
+  
+      $('.second-panel').css('display' , 'none');
+      $('#goback').css('display' , 'none');
+  
+      let amt20 = $('#amt20').html();
+      let amt50 = $('#amt50').html();
+      let amt100 = $('#amt100').html();
+      let amt500 = $('#amt500').html();
+      let amt1000 = $('#amt1000').html();
+      $('#btn-20').click(function() {
+              $('#amount').val(amt20);
+      });
+      $('#btn-50').click(function() {
+              $('#amount').val(amt50);
+      });
+      $('#btn-100').click(function() {
+              $('#amount').val(amt100);
+      });
+      $('#btn-500').click(function() {
+              $('#amount').val(amt500);
+      });
+      $('#btn-1000').click(function() {
+              $('#amount').val(amt1000);
+      });
+      $('#btn-custom').click(function() {
+              $('#amount').val('');
+      });
+  
+      $('#btn-continue').click(function() {
+        if ( $('#amount').val() == '') {
+          alert('Please Enter Amount to Donate');
+        }
+        else if ( $('#amount').val() < 5) {
+          alert('Donation Amount should not be less than $5');
+        } 
+        else {
+          $('.first-panel').css('display' , 'none');
+          $('#goback').css('display' , 'block');
+          $('#changehead').text('Add Your Information');
+          $('.second-panel').css('display' , 'block').addClass('slide-in-right');
+          $('#paid').html(parseFloat($('#amount').val()).toFixed(2));
+              $('#paid2').html(parseFloat($('#amount').val()).toFixed(2));
+        }
+      });
+  
+      $('#edit').click(function() {
+        $('.first-panel').css('display' , 'block').addClass('slide-in-left');
+          $('#goback').css('display' , 'none');
+          $('#changehead').text('Choose Amount');
+          $('.second-panel').css('display' , 'none');
+      });
+  
+      $('#goback').click(function() {
+          $('.first-panel').css('display' , 'block').addClass('slide-in-left');
+          $('#goback').css('display' , 'none');
+          $('#changehead').text('Choose Amount');
+          $('.second-panel').css('display' , 'none');
+      });
+  
+      $('#supportukr').click(function() {
+              $('#myModal').show();
+      });
+  
+      $('#myBtn1').click(function() {
+              $('#myModal').show();
+      });
+  
+      $('#myBtn2').click(function() {
+              $('#myModal').show();
+      });
+    });
+  </script>
+
+<script>
+  function myFunction() {
+    var copyText = document.getElementById("address");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value);
+    alert("copied: " + copyText.value)
+    // var tooltip = document.getElementById("myTooltip");
+    // tooltip.innerHTML = "Copied: " + copyText.value;
+  }
+  
+  // function outFunc() {
+  //   var tooltip = document.getElementById("myTooltip");
+  //   tooltip.innerHTML = "Copy to clipboard";
+  // }
+
+  function showThankYou(){
+    alert ("Thank you for donating")
+  }
+  // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  // if (event.target !== modal) {
+  // modal.style.display = "none";
+  // }
+  alert("clicked")
+}
+  function shut (){
+      
+      modal.style.display = "none";
+    }
+  </script>
+
+
+<script src="/script.js"></script>
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

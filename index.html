@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <title>Global Mission Donations</title>
+    <!-- CSS links -->
+    <!-- <link rel="stylesheet" href="donate.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <!-- <script async src="//jsfiddle.net/aj7Lk2bw/19/"></script> -->
+</head>
+
+<body class="">
+    <section class="bg-dark">
+        <div class="container-fluid">
+            <ul class="d-flex align-items-center flex-wrap justify-content-md-end justify-content-center">
+                <!-- <li><a href="" class="text-muted mx-2 text-decoration-none">LIVE UPDATES</a></li>
+                <li><a href="" class="text-muted mx-2 text-decoration-none">PRESS</a></li>
+                <div class="dropdown">
+                    <button class="bg-transparent border-0 text-muted dropdown-toggle" type="button"
+                        id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                        FINANCIALS
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li class=""><a href="" class="dropdown-item">Institutional Partners</a></li>
+                        <li class=""><a href="" class="dropdown-item">Donors Circle</a></li>
+                        <li class=""><a href="" class="dropdown-item">Gifting Circle</a></li>
+                        <li class=""><a href="" class="dropdown-item">Bstrong</a></li>
+                        <li class=""><a href="" class="dropdown-item">Flew The Coop</a></li>
+                        <li class=""><a href="" class="dropdown-item">We Gave What</a></li>
+                        <li class=""><a href="" class="dropdown-item">TGFIF</a></li>
+                        <li class=""><a href="" class="dropdown-item">GCI Planet</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="bg-transparent border-0 text-muted dropdown-toggle" type="button"
+                        id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                        PARTNERSHIPS
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li class=""><a href="" class="dropdown-item">Institutional Partners</a></li>
+                        <li class=""><a href="" class="dropdown-item">Donors Circle</a></li>
+                        <li class=""><a href="" class="dropdown-item">Gifting Circle</a></li>
+                        <li class=""><a href="" class="dropdown-item">Bstrong</a></li>
+                        <li class=""><a href="" class="dropdown-item">Flew The Coop</a></li>
+                        <li class=""><a href="" class="dropdown-item">We Gave What</a></li>
+                        <li class=""><a href="" class="dropdown-item">TGFIF</a></li>
+                        <li class=""><a href="" class="dropdown-item">GCI Planet</a></li>
+                    </ul>
+                </div> -->
+
+
+
+                <li class="dropdown"><button class="btn text-muted dropdown-toggle" type="button"
+                        id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false" title="English" href=""
+                        data-wg-notranslate="true" class="">EN</button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li class=""><a title="Dansk" href="" data-wg-notranslate="true" class="dropdown-item">DA</a>
+                        </li>
+                        <li class=""><a title="Nederlands" href="" data-wg-notranslate="true"
+                                class="dropdown-item">NL</a>
+                        </li>
+                        <li class=""><a title="Español" href="" data-wg-notranslate="true" class="dropdown-item">ES</a>
+                        </li>
+                        <li class=""><a title="Français" href="" data-wg-notranslate="true" class="dropdown-item">FR</a>
+                        </li>
+                        <li class=""><a title="Suomi" href="" data-wg-notranslate="true" class="dropdown-item">FI</a>
+                        </li>
+                        <li class=""><a title="Deutsch" href="" data-wg-notranslate="true" class="dropdown-item">DE</a>
+                        </li>
+                        <li class=""><a title="Ελληνικά" href="" data-wg-notranslate="true" class="dropdown-item">EL</a>
+                        </li>
+                        <li class=""><a title="Italiano" href="" data-wg-notranslate="true" class="dropdown-item">IT</a>
+                        </li>
+                        <li class=""><a title="日本語" href="" data-wg-notranslate="true" class="dropdown-item">JA</a></li>
+                        <li class=""><a title="한국어" href="" data-wg-notranslate="true" class="dropdown-item">KO</a></li>
+                        <li class=""><a title="Polski" href="" data-wg-notranslate="true" class="dropdown-item">PL</a>
+                        </li>
+                        <li class=""><a title="Português" href="" data-wg-notranslate="true"
+                                class="dropdown-item">PT</a>
+                        </li>
+                        <li class=""><a title="Chinese" href="" data-wg-notranslate="true" class="dropdown-item">ZH</a>
+                        </li>
+                        <li class=""><a title="Svenska" href="" data-wg-notranslate="true" class="dropdown-item">SV</a>
+                        </li>
+                        <li class=""><a title="Українська" href="" data-wg-notranslate="true"
+                                class="dropdown-item">UK</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark pb-3 mt-0">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/index.html"><img class="logo1" style="width: 400px; height: 150px;" src="/images/logo.jpeg" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto ">
+                            <li class="nav-item">
+                                <a class="nav-link text-primary mx-2 " aria-current="page" href="/index.html">HOME</a>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    ABOUT
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                                    <li><a class="dropdown-item" href="#">Contact us</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" href="#">MISSIONS</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    PROGRAMS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                                    <li><a class="dropdown-item" href="#">Contact us</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" href="#">OPERATIONS</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" href="/donate.html">DONATE</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container-fluid">
+                <!-- <h2 class="py-3 text-center mt-5">Bootstrap Carousel</h2> -->
+                <div class="row py-3">
+                    <div class="col">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/images/2023-turkey2b-jpg.webp" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h3>Kahramanmaras Earthquake</h3>
+                                        <p>GEM Bstrong has committed an initial $20,000,000 in donated supplies to support the people of Turkey’s devastating string of earthquakes.
+                                        </p>
+                                        <a href="/donate.html" class="bg-dark text-decoration-none donate-btn">Donate</a>
+                                       
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/images/ukraine-slider-v3-final-opt-jpg.webp" class="d-block w-100"
+                                        alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h2>Ukraine Crisis</h2>
+                                        <p class="fs-5"> GEM has been on the ground since day two of the Ukrainian
+                                            crisis. We have sent 751 trucks of aid into the region and housed or
+                                            relocated 52,368 individuals. GEM is now also repairing multiple key
+                                            structures and homes within Ukraine.</p>
+                                            <a href="/donate.html" class="bg-dark text-decoration-none donate-btn">Donate</a>
+                                       
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/images/2022-slide-ian-v3-opt.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Hurricane Ian</h5>
+                                        <p  class="fs-5">GEM BStrong, in partnership with Dade County, has teams on the ground, loaded and sent multiple trucks of aid and supplies, and established distribution points in affected areas</p>
+
+                                        <a href="/donate.html" class="bg-dark text-decoration-none donate-btn">Donate</a>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="/images/2022-slide-HurricaneFiona-r3-opt-jpg.webp" class="d-block w-100"
+                                        alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Hurricane Fiona</h5>
+                                        <p  class="fs-5">GEM BStrong, in partnership with #Yonomequito, are on the ground in Puerto Rico and the Dominican Republic, addressing the extreme flooding and impact of Hurricane Fiona.
+                                        </p>
+                                        <a href="/donate.html" class="bg-dark text-decoration-none donate-btn">Donate</a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-warning text-white text-center">
+        <p class="py-3 fw-bold">
+            Turkey-Syria earthquake: to help, please donate, volunteer or drop off donations.
+        </p>
+    </section>
+
+    <section class="container-fluid">
+        <div class="d-flex  justify-content-around flex-wrap align-items-center  image-section px-3">
+            <img src="/images/Four-Star-Rating-Badge-Full-Color-1536x1536.png" alt="">
+            <img src="/images//platinum-transparency-award-badge-guidestar-jpg.webp" alt="">
+            <img src="/images/unnamed.png" alt="">
+            <img src="/images/guidestar-platinum-seal-2021-rgb.svg" alt="">
+            <img src="/images/DigitalRGB_225px_Platinum.svg" alt="">
+            <img src="/images/2019-guidstar.png" alt="">
+            <img src="/images/2018-guidetar.png" alt="">
+            <img src="/images/2017-guidestar.png" alt="">
+            <img style="width: 500px; height: 500px;" src="/images/iom-jpg.webp" alt="">
+        </div>
+
+        <div>
+            <img src="" alt="">
+            <p class="fw-bold text-center">
+                Our main objectives are to deliver the most amount of aid, to the most amount of people in need, in the
+                shortest amount of time and with the least amount of costs to our donors. This also applies to our
+                rebuilding efforts.
+            </p>
+            <p class="text-center fw-light">Founder Michael Capponi</p>
+        </div>
+    </section>
+
+    <section class="container-fluid p-5 mx-auto text-center">
+        <h5 class="py-3 fw-bold">FEATURED VIDEOS</h5>
+        <div>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="mx-auto w-100" height="600" src="https://www.youtube.com/embed/TCe3aOAzb28"
+                    title="Global Empowerment Mission 2022 Recap" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="d-flex  justify-content-around flex-wrap align-items-center  mission-img-section p-4">
+            <img src="/images/turkeySyria-earthquake.PNG" alt="">
+            <img src="/images/ukraineXmas.PNG" alt="">
+            <img src="/images/global-hq-launch.PNG" alt="">
+            <img src="/images/hurricane-IAN.PNG" alt="">
+            <img src="/images/kherson-missions.PNG" alt="">
+            <img src="/images/6-months-recap.PNG" alt="">
+        </div>
+
+        <div>
+            <img src="" alt="">
+            <p class="fw-bold fs-5 text-center px-4">
+                Disrupting disaster relief with a complete 360-degree response. Solving complex problems efficiently,
+                with innovative solutions, through smart partnerships.
+            </p>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center align-items-center gap-5 py-5">
+            <div class="text-center">
+                <img style="width: 50px;" src="/images/phase1-icon-500px.png" alt="">
+                <p class="m-0">FIRST RESPONSE PHASE</p>
+                <h6>DISASTER RELIEF</h6>
+            </div>
+
+            <div class="text-center">
+                <img style="width: 50px;" src="/images/phase2.png" alt="">
+                <p class="m-0">SECOND RESPONSE PHASE</p>
+                <h6>THE GAP PERIOD</h6>
+            </div>
+
+            <div class="text-center">
+                <img style="width: 50px;" src="/images/stage3-600x596.png" alt="">
+                <p class="m-0">THIRD RESPONSE PHASE</p>
+                <h6>SUSTAINABLE DEVELOPMENT</h6>
+            </div>
+
+        </div>
+    </section>
+    <hr>
+
+    <section class="container-fluid p-5">
+        <h5 class="py-3 fw-bold text-center">FEATURED MISSIONS</h5>
+
+        <div class="card-group gap-5">
+            <div class="card shadow">
+                <img src="/images/cdc_covid.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <small class="text-muted">2020</small>
+                    <h5 class="card-title m-0">COVID 19</h5>
+                    <p class="text-muted m-0">UNITED STATES</p>
+                    <p class="card-text py-4">
+                        In January 2020, the COVID‑19 pandemic began in the United States and is an ongoing global
+                        pandemic of coronavirus disease, caused by severe acute respiratory syndrome coronavirus.</p>
+                </div>
+                <div class="card-footer  bg-primary text-center">
+                    <a href="/donate.html" class="text-decoration-none text-white">DONATE</a>
+                </div>
+            </div>
+
+            <div class="card shadow">
+                <img src="/images/Haiti-Earthquake.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <small class="text-muted">2023</small>
+                    <h5 class="card-title m-0">KAHRAMANMARAS EARTHQUAKE</h5>
+                    <p class="text-muted m-0">TURKEY-SYRIA</p>
+                    <p class="card-text py-4">
+                        On 6 February 2023, a Mw 7.8 earthquake struck southern and central Turkey and northern and ... 
+                        (59 mi) to the north-northeast from the first, in Kahramanmaraş Province.
+                    <br>
+                        Our priority is for your generous donations to be channelled in the best 
+                        way possible for maximum short, medium, and long-term impact. </p>
+                </div>
+                <div class="card-footer  bg-primary text-center">
+                    <a href="/donate.html" class="text-decoration-none text-white">DONATE</a>
+                </div>
+            </div>
+
+            <div class="card shadow">
+                <img src="/images/hurricane-IAN.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <small class="text-muted">2022</small>
+                    <h5 class="card-title m-0">HURRICANE IAN</h5>
+                    <p class="text-muted m-0">UNITED STATES</p>
+                    <p class="card-text py-4">
+                        Hurricane Ian, large tropical cyclone that brought significant wind damage 
+                        and flooding to western Cuba, central Florida, and North Carolina in late September and early October 2022</p>
+                </div>
+                <div class="card-footer  bg-primary text-center">
+                    <a href="/donate.html" class="text-decoration-none text-white">DONATE</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex  justify-content-around flex-wrap align-items-center  image-section px-3 pt-5 ">
+            <img src="/images/pandemics-1.png" alt="">
+            <img src="/images/tornadoes-1.png" alt="">
+            <img src="/images/confict-icon.png" alt="">
+            <img src="/images/volcanos.png" alt="">
+            <img src="/images/hurricanes-1.png" alt="">
+            <img src="/images/eartquakes.png" alt="">
+            <img src="/images/flood.png" alt="">
+            <img src="/images/tragedy.png" alt="">
+            <img src="/images/wildfires-1.png" alt="">
+            <img src="/images/sunstainability.png" alt="">
+        </div>
+
+    </section>
+    <hr>
+
+    <section>
+        <div>
+            <img src="" alt="">
+            <p class="fw-bold text-center">
+                Every action we take together impacts the lives of others around us.
+            </p>
+        </div>
+        <h5 class="py-5 fw-bold text-center">GLOBAL IMPACT</h5>
+    </section>
+
+
+    <section
+        class="container-fluid p-5 elementor-section elementor-top-section elementor-element elementor-element-4a9286b elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="4a9286b" data-element_type="section">
+        <div class="elementor-container elementor-column-gap-default">
+            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5d15f2a"
+                data-id="5d15f2a" data-element_type="column">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                    <div class="elementor-element elementor-element-da2e499 elementor-widget elementor-widget-shortcode"
+                        data-id="da2e499" data-element_type="widget" data-widget_type="shortcode.default">
+                        <div class="elementor-widget-container">
+                            <div class="elementor-shortcode">
+                                <div class="map_wrapper" id="map_wrapper_4960">
+                                    <div class="map_box" style="max-width:2200px">
+                                        <div class="map_aspect_ratio" style="padding-top:56%" data-padding-top="56%"
+                                            data-padding-top-mobile="0%">
+                                            <div class="map_container">
+                                                <div class="map_render map_loading" id="map_4960"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=' mx-0 numbers container-fluid p-5'>
+        <!-- <div class='col-md-4 col-sm-4 col-xs-4'> -->
+        <ul class='row border mx-0 p-0'>
+
+            <!-- item 01 -->
+            <div class="number-item col-md-3 border text-center">
+                <h2 class="value">355</h2>
+                <p>DISASTER <span class="text-primary fw-bold">MISSION TRIPS</span></p>
+            </div>
+
+            <!-- item 02 -->
+            <div class="number-item col-md-6 border text-center">
+                <span class="fw-bold fs-2">$</span><span class="value fw-bold fs-2">2</span><span
+                    class="fw-bold fs-2">,</span><span class="value fw-bold fs-2">920</span><span
+                    class="fw-bold fs-2">,</span><span class="value fw-bold fs-2">524</span>
+                <p>IN <span class="text-primary fw-bold"> AID & SUPPLIES</span>DISTRIBUTED</p>
+            </div>
+
+            <!-- item 03 -->
+            <div class="number-item col-md-3 border text-center">
+                <h2 class="value">46</h2>
+                <p><span class="text-primary fw-bold">COUNTRIES </span>SERVED</p>
+            </div>
+
+            <div class="number-item col-md-3 border text-center">
+                <h2 class="value">624</h2>
+                <p> <span class="text-primary fw-bold"> CONTAINERS </span>SENT</p>
+            </div>
+            <div class="number-item col-md-3  border text-center">
+                <h2 class="value">400</h2>
+                <p><span class="text-primary fw-bold">TRUCKS </span>WITH AID SENT</p>
+            </div>
+            <div class="number-item col-md-3  border text-center">
+                <h2 class="value">400</h2>
+                <p><span class="text-primary fw-bold">CARGO PLANES</span>WITH AID</p>
+            </div>
+            <div class="number-item col-md-3  border text-center">
+                <h2 class="value">400</h2>
+                <p><span class="text-primary fw-bold">FULL SHIPS</span>OF AID SENT</p>
+            </div>
+            <div class="number-item col-md-3  border text-center">
+                <h2 class="value">32</h2>
+                <p><span class="text-primary fw-bold">HOMES </span>REPAIRED</p>
+            </div>
+            <div class="number-item col-md-3  border text-center">
+                <h2 class="value">15</h2>
+                <p> <span class="text-primary fw-bold">SCHOOLS </span>REBUILT</p>
+            </div>
+            <div class="number-item col-md-3  border text-center">
+                <h2 class="value">3</h2>
+                <p> <span class="text-primary fw-bold">CLINICS & HOSPITALS</span>REPAIRED</p>
+            </div>
+            <div class="number-item col-md-3  border text-center">
+                <h2 class="value">32</h2>
+                <p> <span class="text-primary fw-bold">SCHOLARSHIPS </span>AWARDED</p>
+            </div>
+            <div class="number-item col-md-4 border text-center">
+                <h2 class="value">950</h2>
+                <p> <span class="text-primary fw-bold">RELOCATIONS</span></p>
+            </div>
+
+            <div class="number-item col-md-4 border text-center">
+                <h2 class="value">859</h2>
+                <p> IN<span class="text-primary fw-bold"> P.P.E. ITEMS</span>DISTRIBUTED</p>
+            </div>
+
+            <div class="number-item col-md-4 border text-center">
+                <h2 class="value">657</h2>
+                <p> <span class="text-primary fw-bold">EVACUATIONS </span>& EXTRACTIONS</p>
+            </div>
+        </ul>
+        <!-- </div> -->
+    </section>
+
+    <!--  -->
+    <section>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                        <div class="cards">
+                            <div class="image-wrapper">
+                                <img src="/images/gem-logo-dark-latin-america.png" alt="...">
+                            </div>
+
+                        </div>
+                        <div class="cards">
+                            <div class="image-wrapper">
+                                <img src="/images/gem-logo-dark-eu.png" alt="...">
+                            </div>
+
+                        </div>
+                        <div class="cards">
+                            <div class="image-wrapper">
+                                <img src="/images/gem-logo-dark-recovery-hubs.png" alt="...">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="cards-wrapper">
+                        <div class="cards">
+                            <div class="image-wrapper">
+                                <img src="/images/gem-logo-dark-ukraine.png" alt="...">
+                            </div>
+
+                        </div>
+                        <div class="cards">
+                            <div class="image-wrapper">
+                                <img src="/images/gem-logo-dark-usa-west.png" alt="...">
+                            </div>
+
+                        </div>
+
+                        <div class="cards">
+                            <div class="image-wrapper">
+                                <img src="" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
+
+
+    <section class="container-fluid p-5 mx-auto text-center">
+        <h5 class="py-4 fw-bold">FEATURED PRESS</h5>
+        <div class="row">
+            <div class="embed-responsive embed-responsive-16by9 col-md-6">
+                <iframe class="mx-auto w-100" height="350"
+                    src="https://gem-public.s3.us-east-2.amazonaws.com/video/2022/cnn-anderson-cooper-gem-ukraine.mp4"
+                    title="Global Empowerment Mission 2022 Recap" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe> -->
+            </div>
+
+            <div class="embed-responsive embed-responsive-16by9 col-md-6">
+                <iframe class="mx-auto w-100" height="350"
+                    src="https://gem-public.s3.us-east-2.amazonaws.com/video/2021/cnn-surfside-michael-capponi.mp4"
+                    title="Global Empowerment Mission 2022 Recap" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe> -->
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section>
+        <div>
+            <img src="" alt="">
+            <p class="fw-bold fs-5 text-center px-4">
+                Our impact includes many facets and programs. We are dedicated to restoring hope <br> and opportunity in
+                the lives of those affected.
+            </p>
+        </div>
+
+        <div class="d-flex  justify-content-around flex-wrap align-items-center  image-section px-3 pt-5 ">
+            <div>
+                <img src="/images/schools-rebuild-removebg-preview.png" alt="">
+                <p>SCHOOL REBUILDS</p>
+            </div>
+            <div>
+                <img src="/images/house-rebuilds-removebg-preview.png" alt="">
+                <p>HOME REBUILDS</p>
+            </div>
+            <div>
+                <img src="/images/education-removebg-preview.png" alt="">
+                <p>EDUCATION</p>
+            </div>
+            <div>
+                <img src="/images/empower-removebg-preview.png" alt="">
+                <p>EMPOWERMENT</p>
+            </div>
+            <div>
+                <img src="/images/tools-removebg-preview.png" alt="">
+                <p>TOOLS</p>
+            </div>
+            <div>
+                <img src="/images/recycle-removebg-preview.png" alt="">
+                <p>PLASTIC BUY-BACK</p>
+            </div>
+            <div>
+                <img src="/images/fishing-net-removebg-preview.png" alt="">
+                <p>ADOPT A FISHERMAN</p>
+            </div>
+            <div>
+                <img src="/images/filtering-water-removebg-preview.png" alt="">
+                <p>WATER FILTRATION</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container-fluid p-5 mx-auto">
+        <h5 class="py-4 fw-bold text-center">FEATURED PROGRAMS</h5>
+
+        <div class="card-group gap-5">
+            <div class="card shadow">
+                <img src="/images/hope-for-ukraine.png" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <img src="/images/hope-for-ukraine-flag-removebg-preview.png" class="card-img-body" alt="...">
+                    <h5 class="card-title m-0">HOPE FOR UKRAINE</h5>
+                    <p class="card-text py-4">
+                        Community Rebuilds in Ukraine, measured by a cost per human impact analysis.
+                    </p>
+                </div>
+                <div class="card-footer  bg-primary text-center">
+                    <a href="/donate.html" class="text-decoration-none text-white">DONATE</a>
+                </div>
+            </div>
+
+            <div class="card shadow">
+                <img src="/images/no-hub-map-yellow.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <img src="/images/relief-network-removebg-preview.png" class="card-img-body" alt="">
+                    <h5 class="card-title m-0">GLOBAL RELIEF NETWORK</h5>
+                    <p class="card-text py-4">
+                        A worldwide matrix of global aid consisting of corporate donors, private donors, government, 
+                        international NGOs, and community drives working together under a streamlined, 
+                        efficient umbrella operated by GEM BStrong.</p>
+                </div>
+                <div class="card-footer  bg-primary text-center">
+                    <a href="/donate.html" class="text-decoration-none text-white">DONATE</a>
+                </div>
+            </div>
+
+            <div class="card shadow">
+                <img src="/images/Haiti-Earthquake.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <img src="/images/education-removebg-preview.png" class="card-img-body" alt="">
+                    <h5 class="card-title m-0">2023 TURKEY-SYRIA EARTHQUAKE</h5>
+                    <p class="card-text py-4">
+                        On 6 February 2023, a Mw 7.8 earthquake struck southern and central Turkey and northern and ... 
+                        (59 mi) to the north-northeast from the first, in Kahramanmaraş Province.
+                    <br>
+                        Our priority is for your generous donations to be channelled in the best 
+                        way possible for maximum short, medium, and long-term impact. 
+                    </p>
+                </div>
+                <div class="card-footer  bg-primary text-center">
+                    <a href="/donate.html" class="text-decoration-none text-white">DONATE</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="">
+        <div class="container-fluid bg-secondary py-4">
+            <h6 class="text-white text-center">STAY INFORMED: SIGN UP FOR OUR NEWSLETTER</h6>
+
+            <form action="" class="row justify-content-center align-items-center">
+                <div class="mb-3 mt-3  col-md-4">
+                    <input type="text" class="form-control" id="firstName" placeholder="First Name" name="firstName">
+                </div>
+                <div class="mb-3 mt-3 col-md-4">
+                    <input type="email" class="form-control " id="email" placeholder="Email" name="email">
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-dark w-100">Subscribe</button>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="bg-dark text-muted">
+            <div class="row mx-0 flex-wrap  px-5 pt-5">
+                <div class="col-md-3">
+                    <h5>EXPLORE</h5>
+                    <ul class="list-unstyled">
+                        <li>Missions</li>
+                        <li>Press</li>
+                        <li>Live Updates</li>
+                        <li>Join Team GEM</li>
+                        <li>Volunteer</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>FEATURED MISSIONS</h5>
+                    <ul class="list-unstyled">
+                        <li>Hurricane Ian</li>
+                        <li>Ukraine Crisis</li>
+                        <li>Kentucky Tornadoes</li>
+                        <li>Covid 19</li>
+                        <li>Hurricane Dorian</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>FINANCIALS</h5>
+                    <ul class="list-unstyled">
+                        <li>How to Donate</li>
+                        <li>Tax Returns</li>
+                        <li>Annual Report</li>
+                        <li>Compliance</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <img src="/images/amazon-smile.PNG" class="amazon-smile-img" alt="">
+                </div>
+
+            </div>
+
+            <div class="row flex-wrap align-items-center mx-0 p-5">
+                <div class="col-md-4">
+                    <a href="https://web.facebook.com/theglobalempowermentmission?_rdc=1&_rdr"><i class="fa-brands fa-facebook-f fa-2x mr-2"></i></a>
+                    <a href="https://www.instagram.com/globalempowermentmission/"><i class="fa-brands fa-instagram fa-2x mx-2"></i></a>
+                    <a href="https://www.youtube.com/@globalempowermentmission"><i class="fa-brands fa-youtube fa-2x mx-2"></i></a>
+                    <a href="https://twitter.com/gemmissions"><i class="fa-brands fa-twitter fa-2x mx-2"></i></a>
+                </div>
+                <div class="col-md-8">
+                    <div class="d-flex  justify-content-around flex-wrap align-items-center  image-section px-3">
+                        <img src="/images/Four-Star-Rating-Badge-Full-Color-1536x1536.png" alt="">
+                        <img src="/images//platinum-transparency-award-badge-guidestar-jpg.webp" alt="">
+                        <img src="/images/unnamed.png" alt="">
+                        <img src="/images/guidestar-platinum-seal-2021-rgb.svg" alt="">
+                        <img src="/images/DigitalRGB_225px_Platinum.svg" alt="">
+                        <img src="/images/2019-guidstar.png" alt="">
+                        <img src="/images/2018-guidetar.png" alt="">
+                        <img src="/images/2017-guidestar.png" alt="">
+                        <img style="width: 100px; height: 50px;" src="/images/iom-jpg.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-end row mx-0 align-items-center  px-5 py-3">
+                <small class="col-md-6">© 2023 Global Empowerment Mission, Inc., a US 501 (c)(3) public charity, EIN
+                    45-3782061 </small>
+                <small class="col-md-3">1850 NW 84TH AVE, SUITE 100 DORAL FL 33126</small>
+                <small class="col-md-3 text-end">Sitemap • Website • Privacy Policy</small>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+
+    <link rel='stylesheet' id='interactive-geo-maps_main-css' href='/map/styles.min.css' media='all' />
+
+    <script src='https://cdn.amcharts.com/lib/version/4.10.29/core.js'
+        id='interactive-geo-maps_amcharts_core-js'></script>
+    <script src='https://cdn.amcharts.com/lib/version/4.10.29/maps.js'
+        id='interactive-geo-maps_amcharts_maps-js'></script>
+    <script src='https://cdn.amcharts.com/lib/version/4.10.29/themes/animated.js'
+        id='interactive-geo-maps_amcharts_animated-js'></script>
+    <script src='https://cdn.amcharts.com/lib/4/geodata/worldLow.js' id='interactive-geo-maps_worldLow-js'></script>
+    <script id='interactive-geo-maps_map_service-js-extra'>
+        var iMapsData = {
+            "options": {
+                "animations": "1",
+                "lazyLoad": "1",
+                "async": "",
+                "hold": "",
+                "locale": false,
+                "lang": false
+            },
+            "data": [{
+                "map": "worldLow",
+                "mapURL": "https:\/\/cdn.amcharts.com\/lib\/4\/geodata\/worldLow.js",
+                "usaWarning": "",
+                "projection": "Miller",
+                "albersUsaWarning": "",
+                "description": "",
+                "grid": {
+                    "color": "#cccccc",
+                    "projectionBackgroundColor": "#cccccc"
+                },
+                "visual": {
+                    "backgroundColor": "transparent",
+                    "borderColor": "#f9f9f9",
+                    "borderWidth": "1",
+                    "paddingTop": "56",
+                    "paddingTopMobile": "",
+                    "maxWidth": "",
+                    "fontFamily": "inherit",
+                    "bgImage": {
+                        "url": "",
+                        "id": "",
+                        "width": "",
+                        "height": "",
+                        "thumbnail": "",
+                        "alt": "",
+                        "title": "",
+                        "description": ""
+                    }
+                },
+                "viewport": {
+                    "zoomLevel": "1",
+                    "homeGeoPoint": {
+                        "name": "",
+                        "latitude": "",
+                        "longitude": ""
+                    },
+                    "offset": {
+                        "latitude": "",
+                        "longitude": "70"
+                    }
+                },
+                "regions_info": "",
+                "regions": [{
+                    "name": "Dominica",
+                    "id": "DM",
+                    "tooltipContent": "Dominica",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/tropical-storm-erika\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Turks and Caicos Islands",
+                    "id": "TC",
+                    "tooltipContent": "Turks and Caicos Islands",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/hurricane-irma-and-maria\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Bahamas",
+                    "id": "BS",
+                    "tooltipContent": "Bahamas",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/hurricane-dorian\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "US Virgin Islands",
+                    "id": "VI",
+                    "tooltipContent": "US Virgin Islands",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/hurricane-irma-and-maria\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Puerto Rico",
+                    "id": "PR",
+                    "tooltipContent": "Puerto Rico",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/puerto-rico-earthquakes\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Mozambique",
+                    "id": "MZ",
+                    "tooltipContent": "Mozambique",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/cyclone-idai\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "United States",
+                    "id": "US",
+                    "tooltipContent": "United States",
+                    "content": "https:\/\/www.globalempowermentmission.org\/missions\/country\/us\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Sint Maarten",
+                    "id": "SX",
+                    "tooltipContent": "Sint Maarten",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/hurricane-irma-and-maria\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Saint Barthelemy",
+                    "id": "BL",
+                    "tooltipContent": "Saint Barthelemy",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/hurricane-irma-and-maria\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Bolivia",
+                    "id": "BO",
+                    "tooltipContent": "Bolivia",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/bolivia-amazon-wildfires\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Australia",
+                    "id": "AU",
+                    "tooltipContent": "Australia",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/australia-fires\/\t",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Kosovo",
+                    "id": "XK",
+                    "tooltipContent": "Kosovo",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/kosovo-crisis\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Haiti",
+                    "id": "HT",
+                    "tooltipContent": "Haiti",
+                    "content": "https:\/\/www.globalempowermentmission.org\/missions\/country\/haiti\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Cuba",
+                    "id": "CU",
+                    "tooltipContent": "Cuba",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/hurricane-gustav\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Lebanon",
+                    "id": "LB",
+                    "tooltipContent": "Lebanon",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/beirut-explosion\/\t",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Venezuela",
+                    "id": "VE",
+                    "tooltipContent": "Venezuela",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/venezuela-refugee-crisis\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Colombia",
+                    "id": "CO",
+                    "tooltipContent": "Colombia",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/hurricane-eta-iota\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Mexico",
+                    "id": "MX",
+                    "tooltipContent": "Mexico",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/hurricane-willa\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Guatemala",
+                    "id": "GT",
+                    "tooltipContent": "Guatemala",
+                    "content": "https:\/\/www.globalempowermentmission.org\/missions\/country\/guatemala-missions\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Thailand",
+                    "id": "TH",
+                    "tooltipContent": "Thailand",
+                    "content": "",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "British Indian Ocean Territory",
+                    "id": "IO",
+                    "tooltipContent": "British Indian Ocean Territory",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/indian-ocean-tsunami\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Brazil",
+                    "id": "BR",
+                    "tooltipContent": "Brazil",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/amazon-wildfires\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Greece",
+                    "id": "GR",
+                    "tooltipContent": "Greece",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/lesbos-fire\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Cape Verde",
+                    "id": "CV",
+                    "tooltipContent": "Cape Verde",
+                    "content": "",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Turkey",
+                    "id": "TR",
+                    "tooltipContent": "Turkey",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/kahramanmaras-earthquake\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Peru",
+                    "id": "PE",
+                    "tooltipContent": "Peru",
+                    "content": "https:\/\/www.globalempowermentmission.org\/program\/empowerment-wellness\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Honduras",
+                    "id": "HN",
+                    "tooltipContent": "Honduras",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/hurricane-eta-iota\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Kenya",
+                    "id": "KE",
+                    "tooltipContent": "Kenya",
+                    "content": "https:\/\/www.globalempowermentmission.org\/program\/education\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Northern Mariana Islands",
+                    "id": "MP",
+                    "tooltipContent": "Northern Mariana Islands",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/covid-19\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "India",
+                    "id": "IN",
+                    "tooltipContent": "India",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/india-variant-b-1-617-2-3\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Poland",
+                    "id": "PL",
+                    "tooltipContent": "Poland",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/ukraine-crisis\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Ukraine",
+                    "id": "UA",
+                    "tooltipContent": "Ukraine",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/ukraine-crisis\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Hungary",
+                    "id": "HU",
+                    "tooltipContent": "Hungary",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/ukraine-crisis\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Moldova",
+                    "id": "MD",
+                    "tooltipContent": "Moldova",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/ukraine-crisis\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Georgia",
+                    "id": "GE",
+                    "tooltipContent": "Georgia",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/ukraine-crisis\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Romania",
+                    "id": "RO",
+                    "tooltipContent": "Romania",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/ukraine-crisis\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Slovakia",
+                    "id": "SK",
+                    "tooltipContent": "Slovakia",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/ukraine-crisis\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Austria",
+                    "id": "AT",
+                    "tooltipContent": "Austria",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/ukraine-crisis\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Czechia",
+                    "id": "CZ",
+                    "tooltipContent": "Czechia",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/european-fires\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "France",
+                    "id": "FR",
+                    "tooltipContent": "France",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/european-fires\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Spain",
+                    "id": "ES",
+                    "tooltipContent": "Spain",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/european-fires\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Afghanistan",
+                    "id": "AF",
+                    "tooltipContent": "Afghanistan",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/european-fires\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Pakistan",
+                    "id": "PK",
+                    "tooltipContent": "Pakistan",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/pakistan-floods\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Dominican Republic",
+                    "id": "DO",
+                    "tooltipContent": "Dominican Republic",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/hurricane-fiona\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Belize",
+                    "id": "BZ",
+                    "tooltipContent": "Belize",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/hurricane-lisa\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "name": "Indonesia",
+                    "id": "ID",
+                    "tooltipContent": "Indonesia",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/indonesia-earthquake\/",
+                    "useDefaults": "1",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }],
+                "regionDefaults": {
+                    "fill": "#01bcff",
+                    "hover": "#2ca25f",
+                    "inactiveColor": "#e0e0e0",
+                    "action": "open_url",
+                    "customAction": "",
+                    "triggerClickOnHover": ""
+                },
+                "onlyIncludeActive": "",
+                "include": "",
+                "exclude": "AQ",
+                "regionsDataSource": {
+                    "enabled": "",
+                    "type": "categories",
+                    "raw": "",
+                    "google_api_key": "",
+                    "google_sheet_id": "",
+                    "google_sheet_range": "Sheet1",
+                    "google_data_id": "",
+                    "google_data_content": "",
+                    "json": "",
+                    "json_id": "id",
+                    "json_data_source": "",
+                    "json_action_content": "",
+                    "custom_tax": "",
+                    "categoriesIncludeEmpty": "",
+                    "tagsIncludeEmpty": "",
+                    "action_content_template": "{content}"
+                },
+                "regionActiveState": {
+                    "enabled": "",
+                    "source": "hover",
+                    "fill": "#99d8c9"
+                },
+                "regionLegend": {
+                    "enabled": "",
+                    "title": ""
+                },
+                "regionLabels": {
+                    "source": "0",
+                    "customSource": "name",
+                    "activeOnly": "1",
+                    "fontSize": "15",
+                    "mobileFontSize": "100",
+                    "fill": "#111111",
+                    "hover": "#000000",
+                    "horizontalCenter": "middle",
+                    "verticalCenter": "middle",
+                    "nonScaling": "1",
+                    "regionLabelCustomCoordinates": ""
+                },
+                "regionsGroupHover": "",
+                "heatMapRegions": {
+                    "enabled": "",
+                    "type": "gradient",
+                    "minColor": "#f5f5f5",
+                    "maxColor": "#333333",
+                    "legend": "",
+                    "minLabel": "Min",
+                    "maxLabel": "Max",
+                    "label": "",
+                    "noHover": "",
+                    "source": "value"
+                },
+                "regionsTooltipTemplate": "",
+                "roundMarkers_info": "",
+                "roundMarkers": [{
+                    "id": "Northern Mariana Islands",
+                    "coordinates": {
+                        "name": "",
+                        "latitude": "15.0979",
+                        "longitude": "145.6739"
+                    },
+                    "tooltipContent": "Northern Mariana Islands",
+                    "content": "https:\/\/www.globalempowermentmission.org\/mission\/covid-19\/",
+                    "useDefaults": "1",
+                    "radius": "10",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }, {
+                    "id": "Cape Verde",
+                    "coordinates": {
+                        "name": "",
+                        "latitude": "16.5388",
+                        "longitude": "-23.0418"
+                    },
+                    "tooltipContent": "Cape Verde",
+                    "content": "",
+                    "useDefaults": "1",
+                    "radius": "10",
+                    "fill": "#99d8c9",
+                    "hover": "#2ca25f",
+                    "action": "default",
+                    "value": ""
+                }],
+                "markerDefaults": {
+                    "radius": "5",
+                    "fill": "#01bcff",
+                    "hover": "#40d622",
+                    "action": "open_url",
+                    "customAction": "",
+                    "triggerClickOnHover": ""
+                },
+                "markersDataSource": {
+                    "enabled": "",
+                    "type": "raw_legacy",
+                    "google_api_key": "",
+                    "google_sheet_id": "",
+                    "google_sheet_range": "Sheet1",
+                    "google_data_id": "",
+                    "google_data_latitude": "",
+                    "google_data_longitude": "",
+                    "google_data_content": "",
+                    "raw": "",
+                    "json": "",
+                    "json_data_source": "",
+                    "json_id": "id",
+                    "json_lat": "latitude",
+                    "json_lon": "longitude",
+                    "json_action_content": "",
+                    "action_content_template": "{content}"
+                },
+                "roundMarkerLabels": {
+                    "enabled": "",
+                    "fontSize": "15",
+                    "fill": "#111111",
+                    "source": "{name}",
+                    "mobileSize": "100"
+                },
+                "heatMapMarkers": {
+                    "enabled": "",
+                    "type": "gradient",
+                    "minRadius": "8",
+                    "maxRadius": "25",
+                    "minColor": "#f5f5f5",
+                    "maxColor": "#333333",
+                    "legend": "",
+                    "minLabel": "Min",
+                    "maxLabel": "Max",
+                    "source": "value"
+                },
+                "clusterMarkers": {
+                    "enabled": "",
+                    "zoomLevel": "5",
+                    "maxBias": "0.5",
+                    "tooltipTemplate": ""
+                },
+                "roundMarkersLegend": {
+                    "enabled": "",
+                    "title": ""
+                },
+                "roundMarkersMobileSize": "100",
+                "roundMarkersTooltipTemplate": "",
+                "imageMarkers_info": "",
+                "imageMarkers": "",
+                "imageMarkerDefaults": {
+                    "image": {
+                        "url": "",
+                        "id": "",
+                        "width": "",
+                        "height": "",
+                        "thumbnail": "",
+                        "alt": "",
+                        "title": "",
+                        "description": ""
+                    },
+                    "size": "20",
+                    "nonScaling": "1",
+                    "horizontalCenter": "middle",
+                    "verticalCenter": "middle",
+                    "action": "none",
+                    "customAction": "",
+                    "triggerClickOnHover": ""
+                },
+                "imageMarkersDataSource": {
+                    "enabled": "",
+                    "type": "json_data",
+                    "json": "",
+                    "json_data_source": "",
+                    "json_id": "id",
+                    "json_lat": "latitude",
+                    "json_lon": "longitude",
+                    "json_image": "",
+                    "json_action_content": ""
+                },
+                "imageMarkersLegend": {
+                    "enabled": "",
+                    "title": ""
+                },
+                "imageMarkersMobileSize": "100",
+                "imageMarkersTooltipTemplate": "",
+                "iconMarkers_info": "",
+                "iconMarkers": "",
+                "iconMarkerDefaults": {
+                    "icon": "fa fa-star",
+                    "horizontalCenter": "middle",
+                    "verticalCenter": "middle",
+                    "scale": "1",
+                    "rotation": "0",
+                    "fill": "#3182bd",
+                    "hover": "#2171b5",
+                    "action": "none",
+                    "customAction": "",
+                    "triggerClickOnHover": ""
+                },
+                "iconMarkerLabels": {
+                    "enabled": "",
+                    "fontSize": "15",
+                    "fill": "#111111",
+                    "source": "{name}"
+                },
+                "iconMarkersDataSource": {
+                    "enabled": "",
+                    "type": "raw_legacy",
+                    "raw": "",
+                    "json": "",
+                    "json_data_source": "",
+                    "json_id": "id",
+                    "json_lat": "latitude",
+                    "json_lon": "longitude",
+                    "json_action_content": ""
+                },
+                "iconMarkersLegend": {
+                    "enabled": "",
+                    "title": ""
+                },
+                "iconMarkersMobileSize": "100",
+                "iconMarkersTooltipTemplate": "",
+                "labels": "",
+                "labelDefaults": {
+                    "fontSize": "15",
+                    "fill": "#111111",
+                    "hover": "#000000",
+                    "action": "none",
+                    "customAction": "",
+                    "triggerClickOnHover": ""
+                },
+                "labelPosition": {
+                    "horizontalCenter": "middle",
+                    "verticalCenter": "middle"
+                },
+                "labelStyle": {
+                    "fontFamily": "inherit",
+                    "fontWeight": "normal"
+                },
+                "labelsLegend": {
+                    "enabled": "",
+                    "title": ""
+                },
+                "labelsMobileSize": "100",
+                "labelsTooltipTemplate": "",
+                "lines_info": "",
+                "lines": "",
+                "lineDefaults": {
+                    "stroke": "#CCC",
+                    "strokeDash": "2",
+                    "strokeWidth": "6",
+                    "curvature": "0",
+                    "arrow": ""
+                },
+                "linesLegend": {
+                    "enabled": "",
+                    "title": ""
+                },
+                "legend": {
+                    "enabled": "",
+                    "clickable": "false",
+                    "position": "bottom",
+                    "align": "left",
+                    "valign": "bottom",
+                    "style": "default",
+                    "fill": "#000000"
+                },
+                "customLegend": {
+                    "enabled": "",
+                    "type": "internal",
+                    "position": "bottom",
+                    "align": "left",
+                    "valign": "bottom",
+                    "style": "default",
+                    "fill": "#000000"
+                },
+                "overlay": "",
+                "overlayOrder": "",
+                "allowEmpty": "",
+                "drillDownOnClick": "",
+                "alwaysKeepBase": "",
+                "liveFilter": {
+                    "enabled": "",
+                    "type": "menu",
+                    "position": "above",
+                    "allLabel": "All",
+                    "default": "4960",
+                    "includeCount": "",
+                    "keepBase": ""
+                },
+                "tooltip": {
+                    "enabled": "1",
+                    "fixed": "",
+                    "showTooltipOn": "hover",
+                    "template": "{tooltipContent}",
+                    "onlyWithData": "",
+                    "disableMobile": "",
+                    "holdAction": "",
+                    "backgroundColor": "#FFFFFF",
+                    "color": "#000000",
+                    "fontFamily": "inherit",
+                    "fontSize": "",
+                    "fontWeight": "normal",
+                    "cornerRadius": "20",
+                    "pointerLength": "5",
+                    "borderColor": "#f5f5f5",
+                    "borderWidth": "1",
+                    "maxWidth": "400",
+                    "customShadow": "",
+                    "customShadowOpts": {
+                        "dx": "1",
+                        "dy": "1",
+                        "blur": "1",
+                        "opacity": "0.5",
+                        "color": "#000000"
+                    }
+                },
+                "zoom": {
+                    "enabled": "",
+                    "draggable": "1",
+                    "mobileResizable": "1",
+                    "doubleHitZoom": "1",
+                    "wheelable": "1",
+                    "zoomOnClick": "",
+                    "controls": "1",
+                    "homeButton": "1",
+                    "maxZoomLevel": "32",
+                    "controlsPositions": {
+                        "align": "right",
+                        "valign": "bottom"
+                    },
+                    "externalControls": ""
+                },
+                "touchInterface": {
+                    "tapToActivate": "",
+                    "tapTimeout": "3000",
+                    "dragGrip": "",
+                    "dragGripAutoHideDelay": "3000"
+                },
+                "fullScreen": {
+                    "enabled": "",
+                    "mobileOnly": "",
+                    "align": "right",
+                    "valign": "bottom"
+                },
+                "externalDropdown": {
+                    "enabled": "",
+                    "mobileOnly": "",
+                    "namePropery": "",
+                    "placeholder": "Select",
+                    "noResults": "No Matches",
+                    "select": "Tap to Select",
+                    "excludeRegions": "",
+                    "groupOverlay": "",
+                    "onlyParent": ""
+                },
+                "exportMenu": {
+                    "enable": "",
+                    "align": "right",
+                    "verticalAlign": "top"
+                },
+                "custom_css": "",
+                "custom_js": "",
+                "id": 4960,
+                "container": "map_4960",
+                "title": "Mission Map",
+                "urls": {
+                    "worldLow": "https:\/\/cdn.amcharts.com\/lib\/4\/geodata\/worldLow.js"
+                },
+                "allEntries": [],
+                "performance": {
+                    "animations": "1",
+                    "lazyLoad": "1"
+                },
+                "zoomMaster": ""
+            }],
+            "async": [],
+            "version": "1.5.11"
+        };
+    </script>
+
+    <!-- <script src="js/vendor/jquery-1.12.4.min.js"></script> -->
+
+    <script src='/map/app.min.js' id='interactive-geo-maps_map_service-js'></script>
+
+    <script src="/main.js"></script>
+
+    <!-- <script src="/script.js"></script> -->
+
+
+</body>
+
+</html>
